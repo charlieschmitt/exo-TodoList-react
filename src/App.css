@@ -1,0 +1,137 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app{
+  margin: 6rem auto 0;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  border-radius: .5rem;
+  box-shadow: .1rem .1rem 2rem black;
+}
+
+/* TOP */
+
+.top-todo{
+  display: flex;
+  width: 100%;
+  background-color: #f9f9f9;
+  border-bottom: solid .1rem #ecedf0;
+}
+
+.top-todo > .top-todo--left{
+  width: 50%;
+  padding: 2rem;
+}
+
+.top-todo--left > h1{
+  margin-bottom: 1rem;
+  color: #6569fd;
+  font-weight: 300;
+}
+
+.top-todo--left > h1 > strong{
+  font-weight: bold;
+}
+
+.top-todo--left > small{
+  color: #d3d3dc;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.top-todo > .top-todo--right{
+  width: 50%;
+}
+
+.top-todo--right > p{
+  height: 100%;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  color: #b9b7cd;
+}
+
+.top-todo--right > p > strong{
+  margin-right: .2rem;
+}
+
+/* MIDDLE */
+
+form{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  bottom: 2rem;
+  left: 5rem;
+  align-items: center;
+}
+
+form > input{
+  padding: .5rem;
+  margin-right: 4rem;
+  border: .1rem solid #fa6c6b;
+  height: 3rem;
+  font-size: 1rem;
+  color: #b9b7cd;
+  font-weight: bold;
+}
+
+form > button{
+  background-color: #fa6c6b;
+  border: none;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 2rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  cursor: pointer;
+}
+
+form > button:hover{
+  background-color: rgb(226, 80, 80);
+}
+
+/* BOTTOM */
+
+.list-todo{
+  width: 100%;
+}
+
+.item-todo{
+  padding: 2em 1.5rem 2rem 4rem;;
+  display: flex;
+  border-bottom: solid .1rem #ecedf0;
+  align-items: center;
+  font-weight: bold;
+}
+
+.item-todo > p {
+  font-size: 1.5rem;
+  color: #85829b;
+  width: 100%;
+}
+
+.item-todo > button{
+  margin-right: 7rem;
+  background-color: #fa6c6b;
+  border: none;
+  color: #ffffff;
+  width: 2.5rem;
+  height: 2rem;
+  cursor: pointer;
+  transition: ease-in .5s;
+}
+
+.item-todo > button:hover{
+  background-color: rgb(226, 80, 80);
+  transform: rotate(45deg);
+  transition: ease-in .5s;
+}
